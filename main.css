@@ -17,7 +17,14 @@ text-align: center;
 color: peachPuff;
 font-family: fantasy; }
 
-.footer{}
+.footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8em;
+  color: peachPuff;
+  font-family: fantasy; }
 
 .main{
   display: flex;
@@ -65,7 +72,7 @@ button{
   font-family: monospace; }
 
 button:hover{
-  background-color: darkSlateGray; }
+  background-color: #a1c2e0; }
   
 .ac{
   grid-area: ac; 
@@ -119,7 +126,10 @@ button:hover{
   color: #252424; }
 
 .equals{
-  grid-area: eq; }
+  grid-area: eq; 
+  background-color: #587a97;
+  color: aliceBlue; }
+  
 .period{
   grid-area: pd; }
 
