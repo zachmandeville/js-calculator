@@ -9,6 +9,11 @@ var arithmetic = {
   multiply: '*',
   divide: '/'
 }
+
+var enterNumber = function (val) {
+    temp += val
+    display(temp)
+}
 var testDisplay = function (val) {
   var screen = document.getElementById('screen') //our calculator screen
   //if val is a number or '.', add it to the temp string and display the current temp string on
