@@ -11,7 +11,12 @@ body{
   height: 100vh;
   padding: 10px; }
 
-.header{}
+.header{
+font-size: 3em;
+text-align: center;
+color: peachPuff;
+font-family: fantasy; }
+
 .footer{}
 
 .main{
@@ -36,9 +41,10 @@ body{
   padding: 10px; }
 
 .screen{
-  height: 1.5em;
+  height: 100%;
   margin-bottom: -40px; 
   background-color: peachpuff;
+  padding-right: 0.2em;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -62,10 +68,15 @@ button:hover{
   background-color: darkSlateGray; }
   
 .ac{
-  grid-area: ac; }
+  grid-area: ac; 
+  background-color: #bd6262;
+  color: aliceblue; }
+  
 
 .ce{
-  grid-area: ce; }
+  grid-area: ce;
+  background-color: #bd6262;
+  color: aliceblue; }
 
 .1{
   grid-area: 1; }
@@ -88,13 +99,25 @@ button:hover{
 .z{
   grid-area: z; }
 .plus{
-  grid-area: pl; }
+  grid-area: pl; 
+  background-color: #ff9711;
+  color: #252424; }
+  
 .minus{
-  grid-area: mi; }
-.multi{
-  grid-area: mu; }
+  grid-area: mi;
+  background-color: #ff9711;
+  color: #252424; }
+
+.multiply{
+  grid-area: mu; 
+  background-color: #ff9711;
+  color: #252424; }
+
 .divide{
-  grid-area: dv; }
+  grid-area: dv; 
+  background-color: #ff9711;
+  color: #252424; }
+
 .equals{
   grid-area: eq; }
 .period{
