@@ -10,29 +10,32 @@ var arithmetic = {
   divide: '/'
 }
 
+//adds the number of the button pressed to our display and temp variable
 var enterNumber = function (val) {
     temp += val
     display(temp)
 }
+
+//Clears out and resets the calculator
+var allClear = function () {
+  entries = []
+  temp = ''
+  display('0')
+}
+
+//clears latest number entry, but remembers everything entered before.
+var clearEntry = function () {
+    temp = ''
+    display('0')
+}
+
 var testDisplay = function (val) {
   var screen = document.getElementById('screen') //our calculator screen
-  //if val is a number or '.', add it to the temp string and display the current temp string on
-  //screen
-  if (!isNaN(val) | val === '.'){
-    temp += val
-    display(temp)
-  }
-  else if (val === 'cool') {
+  if (val === 'cool') {
     entries.push(temp)
     calculate()
   }
 
-  //if val is 'AC', or clear, then reset everything.
-  else if (val === 'AC'){
-    entries = []
-    temp = ''
-    display('0')
-  }
   //if val is 'CE', or clear last entry, remove the temp file and leave things be.
   else if (val === 'CE'){
     temp = ''
